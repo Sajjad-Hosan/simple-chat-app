@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body>
+    <div class="chat_body">
+      <header>
+        <div class="logo">
+          <img
+            src="https://pics.craiyon.com/2023-10-09/586a631238574c7ead38a04260976ce8.webp"
+            alt=""
+            height="40"
+            id="profile_picture"
+          />
+          <h2 class="profile_name">---</h2>
+        </div>
+        <div class="menu"></div>
+      </header>
+      <section class="chat_section"></section>
+      <footer>
+        <textarea
+          class="message_area"
+          placeholder="Write your message"
+          rows="1"
+        ></textarea>
+        <div class="actions">
+          <button class="btn">
+            Send <i class="fa-solid fa-location-arrow"></i>
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/public/client.js"></script>
+  </body>
+</html>
